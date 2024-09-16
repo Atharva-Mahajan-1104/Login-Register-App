@@ -1,0 +1,66 @@
+@charset "UTF-8"; /* Updated to UTF-8 for wider character support */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #AEFD6C;
+    background-image: url('Designer.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #333;
+}
+
+.container {
+    width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: rgb(192, 192, 192);
+    text-align: center;
+    /* Adding a slight gradient for depth */
+    background: linear-gradient(to bottom, #ffffff 0%, #f9f9f9 100%);
+}
+
+h1 {
+    font-weight: bold;
+    color: #007BFF;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+p {
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.emoji {
+    font-size: 24px;
+    margin-right: 5px;
+    /* Ensuring accessibility */
+    aria-label: "Emoji description for screen readers";
+}
+
+.links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    transition: color 0.3s ease, font-size 0.2s ease;
+}
+
+.links a:hover {
+    color: #0056b3;
+    font-size: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+}
